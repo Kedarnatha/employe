@@ -1,0 +1,111 @@
+<!Doctype html>
+<html>
+		<head>
+		<style>
+		#d{  font-size:20px;
+	
+		margin-left:85px;
+		margin-bottom:7px;
+		margin-top:3px;
+		padding:7px;
+		border-radius:20px;
+		}
+		
+	#b{
+	    margin-left:90px;
+		margin-top:30px;
+		color:black;
+		font-size:30px;
+		font-style:italic;
+		margin-bottom:30px;
+	}
+	*{
+	  padding:0px;
+	  margin:0px;
+	}
+	#a{
+	   width:30%;
+	   min-height:450px;
+	   background-image:linear-gradient(lightblue,pink);
+	   
+	   border:solid 4px;
+	   margin-left:10%;
+	   margin-top:20px;
+	   border-radius:100px;
+	}
+	#e{
+	   font-size:30px;
+	   color:red;
+	   background-color:pink;
+	   margin-left:30%;
+	   border-radius:20px;
+	   margin-bottom:30px;
+	}
+	#f{
+	  padding:0px;
+	  font-size:25px;
+	  margin-left:40px;
+	  
+	}
+	#logo-nav{
+	  width:100%;
+	  height:50px;
+	  line-height:50px;
+	  background-color:lightblue;
+	
+	}
+	#foo{
+        position:fixed;
+        bottom:0;
+        width:100%;
+		height:50px;
+		background-color:lightblue;		
+	}
+	#p-div{
+	  width:100%;
+	  height:50px;
+	  text-align:center;
+	  line-height:50px;
+	}
+	#body-div{
+		   background-image:url("kedar20.jpg");
+		   background-size:cover; 
+		}
+		</style>
+		<script>
+		function validateform(){
+		var email=document.myform.email.value;
+		var password1=document.myform.password.value;
+		
+		 if(email==null||email==""){
+		alert("email cant be blank");
+		return false;
+		}
+		else if(password1.length<6){
+		alert("password must at least 6 char long");
+		return false;
+		}
+		}
+		
+		</script>
+		</head>
+		<body id="body-div">
+		<nav id="logo-nav">
+		<img src="logo2.png" style="width:60px;height:50px;margin-left:25px; border-radius:20px;"/>
+		</nav>
+		<form name="myform" method="post" action="userlogin.jsp" id="a" onsubmit="return validateform()">
+		<h2 id="b">USER LOGIN</h2>
+		<label id="b">Enter your Email</label><br>
+		<input type="email" name="email" placeholder="abc@gmail.com" id="d"><br><br>
+		<label id="b">Enter your password</label><br>
+		<input type="password" name="password1" placeholder="Enter your password" id="d"><br><br>
+		<input type="Submit"value="Sign-in" id="e"><br><br>
+		<label id="f">Dont have an account ?</label>
+		<a href="User registration.html" style="font-size:25px;">Register</a><br/>
+		</form>
+		<footer id="foo">
+		<p id="p-div">&copykedarnath</p>
+ 		</footer>
+		</body>
+
+</html>

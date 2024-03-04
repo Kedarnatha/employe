@@ -1,0 +1,153 @@
+<!Doctype html>
+<html>
+		<head>
+		<style>
+		.d{  font-size:20px;
+	
+		margin-left:85px;
+		margin-bottom:7px;
+		margin-top:5px;
+		}
+		#b{
+	    margin-left:70px;
+		margin-top:30px;
+		color:red;
+		font-size:30px;
+		font-style:italic;
+		margin-bottom:30px;
+		
+	
+	}
+	#b{
+	    margin-left:80px;
+		margin-top:30px;
+		color:black;
+		font-size:30px;
+		font-style:italic;
+		margin-bottom:10px;
+		
+	
+	}
+	*{
+	  padding:0px;
+	  margin:0px;
+	}
+	#a{
+	   width:30%;
+	   min-height:550px;
+	   background-image:linear-gradient(lightblue,pink);
+	   border:solid 3px;
+	   margin-left:10%;
+	   margin-top:20px;
+	   border-radius:100px;
+	}
+	#e{
+	   font-size:30px;
+	   color:red;
+	   background-color:pink;
+	   margin-left:30%;
+	   border-radius:20px;
+	   margin-bottom:10px;
+	
+	}
+	#f{
+	  padding:0px;
+	  font-size:25px;
+	  margin-left:140px;
+	  
+	}
+	#g{
+	    text-align:center;
+		color:red;
+		font-size:30px;
+		font-style:italic;
+		margin-bottom:25px;
+		margin-top:10px;
+	}
+	#logo-nav{
+	  width:100%;
+	  height:50px;
+	  line-height:50px;
+	  background-color:lightblue;
+	
+	}
+	#foo{
+        position:fixed;
+        bottom:0;
+        width:100%;
+		height:6%;
+		background-color:lightblue;		
+	}
+	#p-div{
+	  width:100%;
+	  height:50px;
+	  text-align:center;
+	  line-height:50px;
+	  }
+	
+	#body-div{
+		   background-image:url("kedar20.jpg");
+		   background-size:cover;
+		   height:700px;
+		  
+		}
+	
+		</style>
+		<script>
+		function validateform(){
+		var name=document.myform.name.value;
+		var email=document.myform.email.value;
+		var password1=document.myform.password1.value;
+		var pass2=document.myform.pass2.value;
+		if(name==null||name==""){
+		alert("Name cant be blank");
+		return false;
+		}
+		else if(email==null||email==""){
+		alert("email cant be blank");
+		return false;
+		}
+		else if(password1.length<6)
+		{  alert("password must be 6 charter long");
+		   return false;
+		}
+		else if(pass2.length<6)
+		{  alert("enter confirm password");
+		   return false;
+		}
+		else if(password1!=pass2){
+		alert("password do not match");
+		return false;
+		}}
+		
+		</script>
+		</head>
+		<body>
+		<div id="body-div">
+		<nav id="logo-nav">
+		<img src="logo2.png" style="width:60px;height:50px;margin-left:25px; border-radius:20px;"/>
+		</nav>	
+		<form name="myform" method="post" action="user-registration.jsp" id="a" onsubmit="return validateform()">
+		
+		<h2 id="g">USER REGISTRATION</h2>
+		<label id="b">Enter your name</label><br>
+		<input type="text" name="name" placeholder="Enter your name" class="d"><br><br>
+		<label id="b">Enter your Email</label><br>
+		<input type="Email" name="email" placeholder="abc@gmail.com" class="d"><br><br>
+		<label id="b">Enter your password</label><br>
+		<input type="password" name="password1" placeholder="Enter your password" class="d"><br><br>
+		<lable id="b">Confirm Password</lable><br>
+	    <input type="password" name="pass2" placeholder="Retype your password" class="d"><br><br>
+		<input type="Submit"value="Sign-up" id="e"><br>
+		<label id="f">have an account</label>
+		<a href="User login.html"style="font-size:25px;">Login</a><br/>
+		</form>
+		<footer id="foo">
+		<p id="p-div">&copykedarnath</p>
+ 		</footer>
+		
+		
+		</div>
+		</body>
+
+</html>
