@@ -1,0 +1,3 @@
+#This is simple employee management system in java <br>
+#created by Kedarnath araddy <br>
+before using this code contact me plz i will help you to get perticulary...
